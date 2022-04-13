@@ -27,7 +27,7 @@ function salaryRange() {
     salary.addEventListener('input', function () {
         output.textContent = salary.value;
     });
-}
+} 
 
 /** On form submit populate employee payroll data object */
 const save = () => {
