@@ -34,6 +34,61 @@ const createInnerHtml = () => {
     }
     document.querySelector('#display').innerHTML = innerHtml;
 }
+//UC5 Display Employee Details from JSON Object
+const createEmployeePayrollJSON = () => {
+    let empPayrollListLocal = [{
+        "id": 1,
+        "_name": "Mark",
+        "_gender": "male",
+        "_department": [
+            "Finance"
+        ],
+        "_salary": "500000",
+        "_startDate": "29 Oct 2019",
+        "_note": "All In One",
+        "_profilePic": "../assets/profile-images/Ellipse -3.png"
+    },
+    {
+        "id": 2,
+        "_name": "Bill",
+        "_gender": "male",
+        "_department": [
+            "Engineering"
+        ],
+        "_salary": "500000",
+        "_startDate": "29 Oct 2019",
+        "_note": "Terrific Engineer",
+        "_profilePic": "../assets/profile-images/Ellipse -1.png"
+    },
+    {
+        "_name": "Keerthi",
+        "_gender": "female",
+        "_department": [
+            "Sales"
+        ],
+        "_salary": "400000",
+        "_startDate": "29 Oct 2019",
+        "_note": "",
+        "_profilePic": "../assets/profile-images/Ellipse -4.png",
+        "id": 3
+    },
+    {
+        "_name": "Kavya",
+        "_profilePic": "../assets/profile-images/Ellipse -7.png",
+        "_gender": "female",
+        "_department": [
+            "Finance",
+            "Engineer"
+        ],
+        "_salary": "428100",
+        "_note": "                ",
+        "_startDate": "12 Sep 2021",
+        "id": 5
+    }
+    ];
+    return empPayrollListLocal;
+}
+
 const getDeptHtml = (deptList) => {
     let deptHtml = '';
     for (const dept of deptList) {
